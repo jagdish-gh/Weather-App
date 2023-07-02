@@ -1,0 +1,51 @@
+.card {
+  display: flex;
+  width: 450px;
+  padding: 24px;
+  border-radius: 48px;
+  background: #000;
+  background: rgb(60, 29, 111);
+  background: linear-gradient(
+    0deg,
+    rgb(135, 131, 143) 0%,
+    rgb(87, 68, 165) 100%
+  );
+}
+.card:hover {
+  box-shadow: 6px 10px 8px rgb(87, 68, 119);
+}
+.weatherCard {
+  flex-direction: column;
+  align-items: center;
+  padding-top: 42px;
+}
+.topSection {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+.middleSection {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.temp_c {
+  font-size: 52px;
+  margin: 0px;
+}
+.bottomSection {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.bottomSubSection {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+@media only screen and (max-width: 600px) {
+  .card {
+    width: 320px;
+    height: 375px;
+  }
+}

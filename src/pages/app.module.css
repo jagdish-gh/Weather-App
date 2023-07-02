@@ -1,0 +1,22 @@
+.app {
+  min-height: 100vh;
+  background: rgb(83, 64, 155);
+  background: linear-gradient(
+    178deg,
+    rgba(83, 64, 155, 1) 0%,
+    rgba(120, 207, 234, 1) 40%,
+    rgba(99, 145, 232, 1) 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  padding: 24px;
+}
+
+@media only screen and (max-width: 600px) {
+  .app {
+    flex-direction: column;
+    gap: 18px;
+  }
+}
